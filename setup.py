@@ -1,15 +1,5 @@
 from setuptools import setup, find_packages
 
-args = dict(name='poinspection',
-            version='0.0.1',
-            author='Luis Montiel',
-            author_email='luismmontielg@gmail.com',
-            packages=['poinspection'],
-            url='http://pypi.python.org/pypi/poinspection/',
-            description='Python inspection magic functions for ipython.',
-            classifiers=["Development Status :: Beta",
-                         "Programming Language :: Python :: 2.7"])
-
 version = '0.0.1'
 
 setup(
