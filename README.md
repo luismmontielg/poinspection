@@ -1,10 +1,12 @@
-# Python oject inspection for ipython
+Python oject inspection for ipython
+===================================
 
 ipython magic function %pi, print instance
 
 Written and maintained by Luis Montiel <luismmontielg@gmail.com>
 
-## pi, print instance
+%pi, print instance
+-------------------
 
     In [2]: obj_or_dict = {'akey': 'value', 'another': 'value2'}
     In [3]: %pi obj_or_dict
@@ -22,11 +24,13 @@ You can pass a pattern and a separator after the object:
     dict
     akey= 'value'| another= 'value2'
 
-# Installation
+Installation
+============
 
     pip install poinspection
 
-# Usage
+Usage
+=====
 
     %load_ext poinspection
 
@@ -42,12 +46,14 @@ To autoload when IPython starts:
 
       c.InteractiveShellApp.extensions = ['poinspection']
 
-# Information
+Information
+===========
 
 The IPython magic commands work for versions of IPython with the
 decorators IPython.core.magic.magics_class and
 IPython.core.magic.line_magic.
 
-# License
+License
+=======
 
 Public domain. You can do whatever you want with this.
