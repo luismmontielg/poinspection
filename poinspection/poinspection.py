@@ -42,7 +42,7 @@ class InstanceInstrospectionMagics(IPython.core.magic.Magics):
                             output.append("%s= %s" % (k, val))
                         else:
                             output.append("%-15s= %-80.80s" % (k, val))
-                return '%s\n%s' % (o, sep.join(output))
+                return '%s\n%s' % (o, sep.decode('string_escape').join(output))
             if type(o) == dict:
                 return _p(o, 'dict')
             else:
